@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación de San Valentín 💌</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="card-container floating-hearts">
+    <div class="card">
+      <div class="card-front">
+        <div class="heart-icon">❤️</div>
+        <h1>¡Feliz Día de San Valentín!</h1>
+        <button onclick="abrirCarta()">Abrir Carta</button>
+      </div>
+      <div class="card-back">
+        <div class="heart-icon">❤️</div>
+        <h2>Querido/a [Nombre]</h2>
+        <p>En este día tan especial, quiero decirte que eres lo más importante para mí. Te agradezco por cada momento que compartimos y por todo el amor que me das.</p>
+        <p>Espero que este día esté lleno de momentos inolvidables, risas y abrazos. ¡Te quiero mucho!</p>
+        <button onclick="cerrarCarta()">Cerrar Carta</button>
+        <button id="album-button" onclick="window.location.href='album.html'">Ver mi Álbum de Fotos</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

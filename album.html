@@ -40,7 +40,31 @@
     </div>
     <footer>
       <button onclick="window.history.back()">Volver a la Carta</button>
+      <!-- Nuevo botón para mostrar el mensaje especial -->
+      <button id="showMessageBtn">Ver Mensaje Especial</button>
     </footer>
   </div>
+
+  <!-- Recuadro con el mensaje bonito -->
+  <div id="messageBox" class="message-box">
+    <div class="message-content">
+      <button id="closeMessageBtn" class="close-btn">X</button>
+      <p>Mi amor, no hay palabras suficientes para describir lo que siento por ti. Cada día que paso a tu lado es un regalo lleno de alegría y amor.</p>
+      <p>Gracias por ser mi compañero, mi amigo, y la persona con la que quiero compartir todos mis momentos. Te amo con todo mi corazón.</p>
+      <p>Prometo seguir creciendo juntos, seguir aprendiendo y compartiendo la vida, cada día más enamorados. Eres mi todo 💖.</p>
+    </div>
+  </div>
+
+  <script>
+    // Mostrar el mensaje cuando se haga clic en el botón
+    document.getElementById("showMessageBtn").onclick = function() {
+      document.getElementById("messageBox").style.display = "block";
+    };
+
+    // Cerrar el mensaje cuando se haga clic en el botón de cierre
+    document.getElementById("closeMessageBtn").onclick = function() {
+      document.getElementById("messageBox").style.display = "none";
+    };
+  </script>
 </body>
 </html>
